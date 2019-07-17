@@ -208,24 +208,6 @@ Enhancement-Mode Dual MOSFET
 </library>
 <library name="Transistor-FET" urn="urn:adsk.eagle:library:11887002">
 <packages>
-<package name="SOT50P160X80-3" urn="urn:adsk.eagle:footprint:12159985/1" library_version="1" library_locally_modified="yes">
-<description>3-SOT23, 0.50 mm pitch, 1.60 mm span, 1.60 X 0.80 X 0.80 mm body
-&lt;p&gt;3-pin SOT23 package with 0.50 mm pitch, 1.60 mm span with body size 1.60 X 0.80 X 0.80 mm&lt;/p&gt;</description>
-<circle x="-0.954" y="1.184" radius="0.25" width="0" layer="21"/>
-<wire x1="-0.45" y1="0.994" x2="0.45" y2="0.994" width="0.12" layer="21"/>
-<wire x1="0.45" y1="0.994" x2="0.45" y2="0.434" width="0.12" layer="21"/>
-<wire x1="-0.45" y1="-0.994" x2="0.45" y2="-0.994" width="0.12" layer="21"/>
-<wire x1="0.45" y1="-0.994" x2="0.45" y2="-0.434" width="0.12" layer="21"/>
-<wire x1="0.45" y1="-0.9" x2="-0.45" y2="-0.9" width="0.12" layer="51"/>
-<wire x1="-0.45" y1="-0.9" x2="-0.45" y2="0.9" width="0.12" layer="51"/>
-<wire x1="-0.45" y1="0.9" x2="0.45" y2="0.9" width="0.12" layer="51"/>
-<wire x1="0.45" y1="0.9" x2="0.45" y2="-0.9" width="0.12" layer="51"/>
-<smd name="1" x="-0.7223" y="0.5" dx="1.0797" dy="0.36" layer="1"/>
-<smd name="2" x="-0.7223" y="-0.5" dx="1.0797" dy="0.36" layer="1"/>
-<smd name="3" x="0.7223" y="0" dx="1.0797" dy="0.36" layer="1"/>
-<text x="0" y="2.069" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.629" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
 <package name="SOT95P250X120-3" urn="urn:adsk.eagle:footprint:11886995/1" library_version="1">
 <description>3-SOT23, 0.95 mm pitch, 2.50 mm span, 2.90 X 1.50 X 1.20 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.50 mm span with body size 2.90 X 1.50 X 1.20 mm&lt;/p&gt;</description>
@@ -246,13 +228,6 @@ Enhancement-Mode Dual MOSFET
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT50P160X80-3" urn="urn:adsk.eagle:package:12139448/2" type="model" library_version="1" library_locally_modified="yes">
-<description>3-SOT23, 0.50 mm pitch, 1.60 mm span, 1.60 X 0.80 X 0.80 mm body
-&lt;p&gt;3-pin SOT23 package with 0.50 mm pitch, 1.60 mm span with body size 1.60 X 0.80 X 0.80 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOT50P160X80-3"/>
-</packageinstances>
-</package3d>
 <package3d name="SOT95P250X120-3" urn="urn:adsk.eagle:package:11886978/1" type="model" library_version="1">
 <description>3-SOT23, 0.95 mm pitch, 2.50 mm span, 2.90 X 1.50 X 1.20 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.50 mm span with body size 2.90 X 1.50 X 1.20 mm&lt;/p&gt;</description>
@@ -262,7 +237,7 @@ Enhancement-Mode Dual MOSFET
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="NMOS-FET-E" urn="urn:adsk.eagle:symbol:11887003/1" library_version="1">
+<symbol name="NMOS-FET-E" urn="urn:adsk.eagle:symbol:11887003/1" locally_modified="yes" library_version="1" library_locally_modified="yes">
 <description>MOSFET N-channel - Enhancement mode</description>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
 <wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
@@ -299,29 +274,43 @@ Enhancement-Mode Dual MOSFET
 <vertex x="4.318" y="-0.254"/>
 </polygon>
 </symbol>
+<symbol name="PMOS-FET-E" library_version="1" library_locally_modified="yes">
+<description>MOSFET N-channel - Enhancement mode</description>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="1.905" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.254" width="0" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.254" width="0" layer="94"/>
+<text x="-11.43" y="3.81" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
+<text x="-11.43" y="1.27" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="4.318" y="-0.254"/>
+<vertex x="3.302" y="-0.254"/>
+</polygon>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.2225" y="0"/>
+<vertex x="1.27" y="0.47625"/>
+<vertex x="1.27" y="-0.47625"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="RUE002N002TL" library_version="1" library_locally_modified="yes">
-<gates>
-<gate name="G$1" symbol="NMOS-FET-E" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT50P160X80-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12139448/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2SK3072-TB-E" urn="urn:adsk.eagle:component:11887005/1" library_version="1">
+<deviceset name="2SK3072-TB-E" urn="urn:adsk.eagle:component:11887005/1" library_version="1" library_locally_modified="yes">
 <description>&lt;h1&gt; 2SK3072 &lt;/h1&gt;
 
 - N-Channel Silicon MOSFET &lt;br /&gt;
@@ -337,6 +326,54 @@ Enhancement-Mode Dual MOSFET
 Ordering number : ENN7224A</description>
 <gates>
 <gate name="G$1" symbol="NMOS-FET-E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P250X120-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11886978/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRLML6344TRPBFTR" library_version="1" library_locally_modified="yes">
+<description>&lt;h1&gt; IRLML6344TRPBFTR &lt;/h1&gt;
+Provided by International Rectifier &lt;br /&gt;
+Enhancement mode N MOS FET &lt;br /&gt;
+Package: Micro3 aka SOT23 &lt;br /&gt;</description>
+<gates>
+<gate name="G$1" symbol="NMOS-FET-E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P250X120-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11886978/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRLML2246TRPBFTR" library_version="1" library_locally_modified="yes">
+<description>&lt;h1&gt; IRLML6344TRPBFTR &lt;/h1&gt;
+Provided by International Rectifier &lt;br /&gt;
+Enhancement mode &lt;b&gt; P &lt;/b&gt; MOS FET &lt;br /&gt;
+Package: Micro3 aka SOT23 &lt;br /&gt;</description>
+<gates>
+<gate name="G$1" symbol="PMOS-FET-E" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT95P250X120-3">
@@ -8604,13 +8641,10 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="TC1550" library_urn="urn:adsk.eagle:library:9976041" deviceset="TC1550TG" device="" package3d_urn="urn:adsk.eagle:package:9976043/1"/>
-<part name="U$2" library="Transistor-FET" library_urn="urn:adsk.eagle:library:11887002" deviceset="RUE002N002TL" device="" package3d_urn="urn:adsk.eagle:package:12139448/2"/>
-<part name="U$3" library="Transistor-FET" library_urn="urn:adsk.eagle:library:11887002" deviceset="RUE002N002TL" device="" package3d_urn="urn:adsk.eagle:package:12139448/2"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="AGND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="103"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="103"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="103"/>
 <part name="ZD1" library="fairchild-semic" library_urn="urn:adsk.eagle:library:10199714" deviceset="MM5Z15V" device="" package3d_urn="urn:adsk.eagle:package:10199721/1"/>
@@ -8631,57 +8665,48 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="105"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="103"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2"/>
+<part name="U$2" library="Transistor-FET" library_urn="urn:adsk.eagle:library:11887002" deviceset="IRLML6344TRPBFTR" device="" package3d_urn="urn:adsk.eagle:package:11886978/1"/>
+<part name="U$3" library="Transistor-FET" library_urn="urn:adsk.eagle:library:11887002" deviceset="IRLML2246TRPBFTR" device="" package3d_urn="urn:adsk.eagle:package:11886978/1"/>
+<part name="U$5" library="Transistor-FET" library_urn="urn:adsk.eagle:library:11887002" deviceset="IRLML2246TRPBFTR" device="" package3d_urn="urn:adsk.eagle:package:11886978/1"/>
+<part name="U$6" library="Transistor-FET" library_urn="urn:adsk.eagle:library:11887002" deviceset="IRLML6344TRPBFTR" device="" package3d_urn="urn:adsk.eagle:package:11886978/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="109.22" y="43.18" smashed="yes">
-<attribute name="NAME" x="96.393" y="67.818" size="1.27" layer="95"/>
-<attribute name="VALUE" x="96.393" y="66.294" size="1.27" layer="96"/>
-</instance>
-<instance part="U$2" gate="G$1" x="55.88" y="55.88" smashed="yes">
-<attribute name="VALUE" x="53.34" y="55.1942" size="1.778" layer="96" rot="R90" align="center-left"/>
-<attribute name="NAME" x="60.4012" y="55.88" size="1.778" layer="95" rot="R90" align="top-center"/>
-</instance>
-<instance part="U$3" gate="G$1" x="55.88" y="20.32" smashed="yes">
-<attribute name="VALUE" x="53.34" y="34.798" size="1.778" layer="96" rot="R90" align="top-right"/>
-<attribute name="NAME" x="60.4012" y="20.32" size="1.778" layer="95" rot="R90" align="top-center"/>
+<instance part="U$1" gate="G$1" x="106.68" y="43.18" smashed="yes">
+<attribute name="NAME" x="93.853" y="67.818" size="1.27" layer="95"/>
+<attribute name="VALUE" x="93.853" y="66.294" size="1.27" layer="96"/>
 </instance>
 <instance part="P+1" gate="1" x="58.42" y="38.1" smashed="yes">
 <attribute name="VALUE" x="58.42" y="39.624" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND1" gate="1" x="58.42" y="10.16" smashed="yes">
-<attribute name="VALUE" x="55.88" y="7.62" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="58.42" y="12.7" smashed="yes">
+<attribute name="VALUE" x="55.88" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="58.42" y="48.26" smashed="yes">
 <attribute name="VALUE" x="55.88" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="AGND2" gate="VR1" x="111.76" y="10.16" smashed="yes">
-<attribute name="VALUE" x="109.22" y="5.08" size="1.778" layer="96" rot="R90"/>
+<instance part="AGND2" gate="VR1" x="109.22" y="12.7" smashed="yes">
+<attribute name="VALUE" x="106.68" y="7.62" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="58.42" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="59.944" y="32.766" size="1.778" layer="95"/>
-<attribute name="VALUE" x="59.944" y="30.734" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="71.12" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.6214" y="16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="74.422" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="73.66" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="72.1614" y="16.51" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="76.962" y="16.51" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="71.12" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.6214" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="74.422" y="62.23" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="73.66" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="72.1614" y="62.23" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="76.962" y="62.23" size="1.778" layer="96" rot="R90"/>
+<instance part="ZD1" gate="G$1" x="78.74" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.2" y="68.707" size="1.778" layer="95" rot="R90" align="top-left"/>
+<attribute name="VALUE" x="81.28" y="60.96" size="1.778" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="ZD1" gate="G$1" x="81.28" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.74" y="68.707" size="1.778" layer="95" rot="R90" align="top-left"/>
-<attribute name="VALUE" x="83.82" y="60.96" size="1.778" layer="96" rot="R90" align="top-left"/>
-</instance>
-<instance part="ZD2" gate="G$1" x="81.28" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="78.74" y="22.987" size="1.778" layer="95" rot="R90" align="top-left"/>
-<attribute name="VALUE" x="83.82" y="15.24" size="1.778" layer="96" rot="R90" align="top-left"/>
+<instance part="ZD2" gate="G$1" x="78.74" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.2" y="22.987" size="1.778" layer="95" rot="R90" align="top-left"/>
+<attribute name="VALUE" x="81.28" y="15.24" size="1.778" layer="96" rot="R90" align="top-left"/>
 </instance>
 <instance part="R5" gate="G$1" x="53.34" y="15.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="50.673" y="16.383" size="1.778" layer="95"/>
@@ -8691,16 +8716,16 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 <attribute name="NAME" x="50.673" y="51.943" size="1.778" layer="95"/>
 <attribute name="VALUE" x="50.673" y="49.657" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="JP1" gate="G$1" x="142.24" y="40.64" smashed="yes">
-<attribute name="NAME" x="135.89" y="46.355" size="1.778" layer="95"/>
-<attribute name="VALUE" x="135.89" y="35.56" size="1.778" layer="96"/>
+<instance part="JP1" gate="G$1" x="139.7" y="40.64" smashed="yes">
+<attribute name="NAME" x="133.35" y="46.355" size="1.778" layer="95"/>
+<attribute name="VALUE" x="133.35" y="35.56" size="1.778" layer="96"/>
 </instance>
 <instance part="JP2" gate="A" x="43.18" y="40.64" smashed="yes">
 <attribute name="NAME" x="36.83" y="48.895" size="1.778" layer="95"/>
 <attribute name="VALUE" x="36.83" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="111.76" y="83.82" smashed="yes">
-<attribute name="VALUE" x="109.855" y="86.995" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="G$1" x="109.22" y="83.82" smashed="yes">
+<attribute name="VALUE" x="107.315" y="86.995" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="33.02" y="58.42" smashed="yes">
 <attribute name="VALUE" x="31.115" y="61.595" size="1.778" layer="96"/>
@@ -8708,53 +8733,61 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 <instance part="GND3" gate="1" x="35.56" y="30.48" smashed="yes">
 <attribute name="VALUE" x="33.02" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="139.7" y="33.02" smashed="yes">
-<attribute name="VALUE" x="137.16" y="30.48" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="137.16" y="33.02" smashed="yes">
+<attribute name="VALUE" x="134.62" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="G$1" x="129.54" y="43.18" smashed="yes">
-<attribute name="NAME" x="132.08" y="45.72" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="48.26" size="1.778" layer="96" rot="R90" align="top-left"/>
+<instance part="D1" gate="G$1" x="127" y="43.18" smashed="yes">
+<attribute name="NAME" x="129.54" y="45.72" size="1.778" layer="95"/>
+<attribute name="VALUE" x="127" y="48.26" size="1.778" layer="96" rot="R90" align="top-left"/>
 </instance>
 <instance part="P+2" gate="1" x="27.94" y="58.42" smashed="yes">
 <attribute name="VALUE" x="27.94" y="59.944" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="VDD1" gate="G$1" x="91.44" y="83.82" smashed="yes">
-<attribute name="VALUE" x="88.9" y="81.28" size="1.778" layer="96" rot="R90"/>
+<instance part="VDD1" gate="G$1" x="88.9" y="83.82" smashed="yes">
+<attribute name="VALUE" x="86.36" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="VDD2" gate="G$1" x="38.1" y="58.42" smashed="yes">
 <attribute name="VALUE" x="38.1" y="59.944" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U$4" gate="G$1" x="93.98" y="76.2" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="97.79" y="74.93" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="89.4588" y="76.2" size="1.778" layer="95" rot="MR90" align="top-center"/>
+<instance part="U$4" gate="G$1" x="91.44" y="76.2" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="95.25" y="74.93" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="86.9188" y="76.2" size="1.778" layer="95" rot="MR90" align="top-center"/>
 </instance>
-<instance part="R7" gate="G$1" x="91.44" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="89.9414" y="62.23" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="94.742" y="62.23" size="1.778" layer="96" rot="R90"/>
+<instance part="R7" gate="G$1" x="88.9" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.4014" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="92.202" y="62.23" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND5" gate="1" x="91.44" y="58.42" smashed="yes">
-<attribute name="VALUE" x="88.9" y="55.88" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="88.9" y="58.42" smashed="yes">
+<attribute name="VALUE" x="86.36" y="55.88" size="1.778" layer="96"/>
 </instance>
 <instance part="P+3" gate="1" x="58.42" y="73.66" smashed="yes">
 <attribute name="VALUE" x="58.42" y="75.184" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R3" gate="G$1" x="58.42" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="59.944" y="68.326" size="1.778" layer="95"/>
-<attribute name="VALUE" x="59.944" y="66.294" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="63.5" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="63.4238" y="63.119" size="1.778" layer="95"/>
+<attribute name="VALUE" x="68.199" y="62.484" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C1" gate="G$1" x="66.04" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="65.659" y="62.484" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="70.739" y="62.484" size="1.778" layer="96" rot="R90"/>
+<instance part="U$2" gate="G$1" x="55.88" y="55.88" smashed="yes">
+<attribute name="VALUE" x="44.45" y="59.69" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="44.45" y="57.15" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="U$3" gate="G$1" x="55.88" y="66.04" smashed="yes">
+<attribute name="VALUE" x="44.45" y="69.85" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="44.45" y="67.31" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="U$5" gate="G$1" x="55.88" y="30.48" smashed="yes">
+<attribute name="VALUE" x="44.45" y="34.29" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="44.45" y="31.75" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="U$6" gate="G$1" x="55.88" y="20.32" smashed="yes">
+<attribute name="VALUE" x="44.45" y="24.13" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="44.45" y="21.59" size="1.778" layer="95" rot="MR180"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="+12V" class="0">
-<segment>
-<pinref part="P+1" gate="1" pin="+12V"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-</segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="27.94" y1="55.88" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
@@ -8763,57 +8796,60 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+12V"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="U$3" gate="G$1" pin="S"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="1" pin="+12V"/>
+<pinref part="U$5" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="D"/>
-<wire x1="58.42" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
-<junction x="58.42" y="25.4"/>
+<wire x1="58.42" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GN"/>
-<wire x1="73.66" y1="25.4" x2="81.28" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="25.4" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="25.4" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<junction x="73.66" y="25.4"/>
+<junction x="71.12" y="25.4"/>
 <pinref part="ZD2" gate="G$1" pin="K"/>
-<junction x="81.28" y="25.4"/>
+<junction x="78.74" y="25.4"/>
+<pinref part="U$5" gate="G$1" pin="D"/>
+<pinref part="U$6" gate="G$1" pin="D"/>
+<junction x="58.42" y="25.4"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="S"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="ZD2" gate="G$1" pin="P$1"/>
-<wire x1="58.42" y1="15.24" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="15.24" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
 <junction x="58.42" y="15.24"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<junction x="73.66" y="15.24"/>
+<junction x="71.12" y="15.24"/>
 <pinref part="U$1" gate="G$1" pin="SN"/>
-<wire x1="81.28" y1="15.24" x2="111.76" y2="15.24" width="0.1524" layer="91"/>
-<junction x="81.28" y="15.24"/>
+<wire x1="78.74" y1="15.24" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
+<junction x="78.74" y="15.24"/>
 <pinref part="AGND2" gate="VR1" pin="AGND"/>
-<wire x1="111.76" y1="15.24" x2="111.76" y2="12.7" width="0.1524" layer="91"/>
-<junction x="111.76" y="15.24"/>
+<junction x="109.22" y="15.24"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="15.24" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
-<junction x="58.42" y="12.7"/>
 <junction x="58.42" y="15.24"/>
+<junction x="58.42" y="15.24"/>
+<pinref part="U$6" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="S"/>
 <pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="S"/>
 <junction x="58.42" y="50.8"/>
+<pinref part="U$2" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="139.7" y1="40.64" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="40.64" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="6"/>
@@ -8828,22 +8864,21 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="73.66" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="60.96" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="60.96" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GP"/>
-<wire x1="86.36" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="ZD1" gate="G$1" pin="P$1"/>
-<junction x="81.28" y="60.96"/>
+<junction x="78.74" y="60.96"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
-<junction x="73.66" y="60.96"/>
+<wire x1="68.58" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<junction x="71.12" y="60.96"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="G"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="50.8" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
@@ -8851,37 +8886,42 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 <wire x1="40.64" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="43.18" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <junction x="48.26" y="50.8"/>
+<pinref part="U$2" gate="G$1" pin="G"/>
+<wire x1="48.26" y1="53.34" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<junction x="48.26" y="53.34"/>
+<pinref part="U$3" gate="G$1" pin="G"/>
+<wire x1="48.26" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DP"/>
 <pinref part="D1" gate="G$1" pin="P$1"/>
-<wire x1="127" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DN"/>
 <pinref part="D1" gate="G$1" pin="P$2"/>
-<wire x1="127" y1="38.1" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="P$3"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="43.18" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VPP" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SP"/>
-<wire x1="96.52" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="73.66" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="73.66" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VPP"/>
-<wire x1="111.76" y1="81.28" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
-<junction x="111.76" y="73.66"/>
+<wire x1="109.22" y1="81.28" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
+<junction x="109.22" y="73.66"/>
 <pinref part="U$4" gate="G$1" pin="G"/>
 </segment>
 <segment>
@@ -8896,24 +8936,27 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="45.72" y1="38.1" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="G"/>
 <wire x1="45.72" y1="17.78" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="17.78" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="15.24" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
 <junction x="48.26" y="17.78"/>
+<pinref part="U$6" gate="G$1" pin="G"/>
+<pinref part="U$5" gate="G$1" pin="G"/>
+<wire x1="48.26" y1="33.02" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="ZD1" gate="G$1" pin="K"/>
-<wire x1="73.66" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
-<junction x="81.28" y="71.12"/>
+<wire x1="88.9" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+<junction x="78.74" y="71.12"/>
 <pinref part="U$4" gate="G$1" pin="S"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<junction x="91.44" y="71.12"/>
+<junction x="88.9" y="71.12"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -8930,10 +8973,10 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="D"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="D"/>
+<pinref part="U$3" gate="G$1" pin="D"/>
 <junction x="58.42" y="60.96"/>
 </segment>
 </net>
