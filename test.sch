@@ -8569,7 +8569,7 @@ http://www.vishay.com/docs/85728/gsd2004s.pdf</description>
 </library>
 <library name="md1213" urn="urn:adsk.eagle:library:9976036">
 <packages>
-<package name="QFN12" urn="urn:adsk.eagle:footprint:9976037/5" locally_modified="yes" library_version="6" library_locally_modified="yes">
+<package name="QFN12" urn="urn:adsk.eagle:footprint:9976037/6" locally_modified="yes" library_version="7" library_locally_modified="yes">
 <description>&lt;h1&gt;12-Lead QFN Packege Outline&lt;/h1&gt;
 &lt;br/&gt;
 4.00x4.00 mm2 body, 1.00mm height (max), 0.80mm pitch
@@ -8597,15 +8597,15 @@ This footprint is designed  referring to a supertex datasheet.</description>
 <text x="-1.5" y="2.25" size="0.254" layer="51">12</text>
 <text x="-2.54" y="2.54" size="0.8128" layer="27">&gt;VALUE</text>
 <text x="-2.54" y="3.81" size="0.8128" layer="25">&gt;NAME</text>
-<pad name="THV$1" x="-0.6" y="0.6" drill="0.3048" diameter="0.6096" thermals="no"/>
-<pad name="THV$2" x="0.6" y="0.6" drill="0.3048" diameter="0.6096" thermals="no"/>
-<pad name="THV$3" x="-0.6" y="-0.6" drill="0.3048" diameter="0.6096" thermals="no"/>
-<pad name="THV$4" x="0.6" y="-0.6" drill="0.3048" diameter="0.6096" thermals="no"/>
+<pad name="THV$1" x="-0.6" y="0.6" drill="0.3048" diameter="0.508" thermals="no"/>
+<pad name="THV$2" x="0.6" y="0.6" drill="0.3048" diameter="0.508" thermals="no"/>
+<pad name="THV$3" x="-0.6" y="-0.6" drill="0.3048" diameter="0.508" thermals="no"/>
+<pad name="THV$4" x="0.6" y="-0.6" drill="0.3048" diameter="0.508" thermals="no"/>
 <rectangle x1="-0.9" y1="-0.9" x2="0.9" y2="0.9" layer="31"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="QFN12" urn="urn:adsk.eagle:package:9976039/5" locally_modified="yes" type="box" library_version="6" library_locally_modified="yes">
+<package3d name="QFN12" urn="urn:adsk.eagle:package:9976039/6" type="box" library_version="7" library_locally_modified="yes">
 <description>&lt;h1&gt;12-Lead QFN Packege Outline&lt;/h1&gt;
 &lt;br/&gt;
 4.00x4.00 mm2 body, 1.00mm height (max), 0.80mm pitch
@@ -8668,7 +8668,7 @@ This footprint is designed  referring to a supertex datasheet.</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MD1213K6" urn="urn:adsk.eagle:component:9976040/6" locally_modified="yes" prefix="IC" library_version="6" library_locally_modified="yes">
+<deviceset name="MD1213K6" urn="urn:adsk.eagle:component:9976040/7" prefix="IC" library_version="7" library_locally_modified="yes">
 <description>&lt;h1&gt;MD1213K6&lt;/h1&gt;
 One of Supertex (Microchip Tech.) devices.&lt;br/&gt;
 12-lead package (K6)&lt;br/&gt;
@@ -8695,7 +8695,7 @@ VDD1 and VDD2 should also be at the same potential.</description>
 <connect gate="G$1" pin="VSS2" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:9976039/5"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9976039/6"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -8729,14 +8729,14 @@ VDD1 and VDD2 should also be at the same potential.</description>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="Diode_Vishay" library_urn="urn:adsk.eagle:library:10199852" deviceset="GSD2004S" device="" package3d_urn="urn:adsk.eagle:package:10199855/1"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="VDD1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
+<part name="VDD1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device="" value="300V"/>
 <part name="VDD2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device="" value="300V"/>
 <part name="U$4" library="Transistor-FET" library_urn="urn:adsk.eagle:library:11887002" deviceset="2SK3072-TB-E" device="" package3d_urn="urn:adsk.eagle:package:11886978/1"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="105"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2"/>
-<part name="IC1" library="md1213" library_urn="urn:adsk.eagle:library:9976036" deviceset="MD1213K6" device="" package3d_urn="urn:adsk.eagle:package:9976039/5"/>
+<part name="IC1" library="md1213" library_urn="urn:adsk.eagle:library:9976036" deviceset="MD1213K6" device="" package3d_urn="urn:adsk.eagle:package:9976039/6"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="474"/>
